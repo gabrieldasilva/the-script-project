@@ -1,0 +1,11 @@
+{
+  "name": "the-script-project",
+  "version": "1.0.0",
+  "description": "This is a global repo for mini tutorials",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Gabriel Dasilva",
+  "license": "ISC"
+}

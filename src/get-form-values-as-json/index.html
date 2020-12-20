@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <section class="content">
+            <h1 class="content__heading">
+                Send Me a Message
+            </h1>
+
+            <p class="content__lede">
+                Use this handy contact form to get in touch with me.
+            </p>
+
+            <form action="" class="content__form contact-form">
+                <div class="contact-form__input-group">
+                    <input id="salutation-mr"
+                           class="contact-form__input contact-form__input--radio"
+                           name="salutation"
+                           type="radio"
+                           value="Mr.">
+
+                    <label for="salutation-mr" class="contact-form__label contact-form__label--radio">Mr.</label>
+
+                    <input id="salutation-mrs"
+                           class="contact-form__input contact-form__input--radio"
+                           name="salutation"
+                           type="radio"
+                           value="Mrs.">
+
+                    <label for="salutation-mrs" class="contact-form__label contact-form__label--radio">Mrs.</label>
+
+                    <input id="salutation-ms"
+                           class="contact-form__input contact-form__input--radio"
+                           name="salutation"
+                           type="radio"
+                           value="Ms.">
+
+                    <label for="salutation-ms" class="contact-form__label contact-form__label--radio">Ms.</label>
+                </div>
+
+                <div class="contact-form__input-group">
+                    <label for="name" class="contact-form__label">Full Name</label>
+
+                    <input type="text"
+                           id="name"
+                           class="contact-form__input contact-form__input--text"
+                           name="name">
+                </div>
+
+                <div class="contact-form__input-group">
+                    <label for="email" class="contact-form__label">Email Address</label>
+
+                    <input type="email"
+                           id="email"
+                           class="contact-form__input contact-form__input--email"
+                           name="email">
+                </div>
+
+                <div class="contact-form__input-group">
+                    <label for="subject" class="contact-form__label">How can I help you?</label>
+
+                    <select name="subject"
+                            id="subject"
+                            class="contact-form__input contact-form__input--select">
+                        <option>Select a option</option>
+                        <option value="I have a problem.">I have a problem.</option>
+                        <option value="I have a general question.">I have a general question.</option>
+                    </select>
+                </div>
+
+                <div class="contact-form__input-group">
+                    <label for="message" class="contact-form__label">Enter a Message</label>
+
+                    <textarea name="message"
+                              id="message"
+                              cols="65" rows="6"
+                              class="contact-form__input contact-form__input--textarea"></textarea>
+                </div>
+
+                <div class="contact-form__input-group">
+                    <p class="contact-form__label--checkbox-group">
+                        Please send me:
+                    </p>
+
+                    <input id="snacks-pizza"
+                           class="contact-form__input contact-form__input--checkbox"
+                           name="snacks"
+                           type="checkbox"
+                           value="pizza" >
+
+                    <label for="snacks-pizza" class="contact-form__label contact-form__label--checkbox">Pizza</label>
+
+                    <input id="snacks-cake"
+                           class="contact-form__input contact-form__input--checkbox"
+                           name="snacks"
+                           type="checkbox"
+                           value="cake">
+
+                    <label for="snacks-cake" class="contact-form__label contact-form__label--checkbox">Cake</label>
+                </div>
+
+                <!--//- A hidden input to demonstrate that these are grabbed as well.-->
+                <input name="secret"
+                       type="hidden"
+                       value="1b3a9374-1a8e-434e-90ab-21aa7b9b80e7">
+
+                <button class="contact-form__button" type="submit">Send It!</button>
+            </form>
+
+            <div class="results">
+                <h2 class="results__heading">Form Data</h2>
+                <pre class="results__display-wrapper">
+                        <code class="results__display"></code>
+                    </pre>
+            </div>
+        </section>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
